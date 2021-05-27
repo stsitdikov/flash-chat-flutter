@@ -1,6 +1,6 @@
 import 'package:flash_chat/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/components/rounded-button.dart';
+import 'package:flash_chat/components/rounded_button.dart';
 
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'registration_screen';
@@ -34,7 +34,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               onChanged: (value) {
                 //Do something with the user input.
               },
-              decoration: kTextFieldDecoration,
+              decoration:
+                  kTextFieldDecoration.copyWith(hintText: 'Enter your email'),
             ),
             SizedBox(
               height: 8.0,
